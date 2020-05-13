@@ -1,7 +1,8 @@
 <template>
-<div>
-<h1>Countries</h1>
 <div class="main-container">
+<h1>Countries:</h1>
+
+<div class="sub-container">
     <countries-list :countries='countries'></countries-list>
     <country-detail :country='selectedCountry'></country-detail>
 </div>
@@ -43,10 +44,31 @@ mounted(){
 </script>
 
 <style>
+
+h1 {
+  border: white;height: 4700px;
+  color: red;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .main-container {
   display: flex;
+  background-color: blue;
+  align-items: center;
+  text-align: start;
+  justify-content: center;
   
 }
 
+.sub-container {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border:darkgoldenrod;
+  justify-content: start;
+  margin: 75px;
+}
 
 </style>

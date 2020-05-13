@@ -1,5 +1,7 @@
 <template lang="html">
+<div>
   <li v-on:click="handleClick">{{country.name}}</li>
+</div>
 </template>
 
 <script>
